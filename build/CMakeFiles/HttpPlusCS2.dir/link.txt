@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/HttpPlusCS2.dir/src/main.cpp.o -o HttpPlusCS2   -L/Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/lib  -Wl,-rpath,/Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/lib
