@@ -129,6 +129,54 @@ HttpPlusCS2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/build
 .PHONY : HttpPlusCS2/fast
 
+src/http/server.o: src/http/server.cpp.o
+.PHONY : src/http/server.o
+
+# target to build an object file
+src/http/server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/http/server.cpp.o
+.PHONY : src/http/server.cpp.o
+
+src/http/server.i: src/http/server.cpp.i
+.PHONY : src/http/server.i
+
+# target to preprocess a source file
+src/http/server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/http/server.cpp.i
+.PHONY : src/http/server.cpp.i
+
+src/http/server.s: src/http/server.cpp.s
+.PHONY : src/http/server.s
+
+# target to generate assembly for a file
+src/http/server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/http/server.cpp.s
+.PHONY : src/http/server.cpp.s
+
+src/http/session.o: src/http/session.cpp.o
+.PHONY : src/http/session.o
+
+# target to build an object file
+src/http/session.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/http/session.cpp.o
+.PHONY : src/http/session.cpp.o
+
+src/http/session.i: src/http/session.cpp.i
+.PHONY : src/http/session.i
+
+# target to preprocess a source file
+src/http/session.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/http/session.cpp.i
+.PHONY : src/http/session.cpp.i
+
+src/http/session.s: src/http/session.cpp.s
+.PHONY : src/http/session.s
+
+# target to generate assembly for a file
+src/http/session.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/http/session.cpp.s
+.PHONY : src/http/session.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +210,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HttpPlusCS2"
+	@echo "... src/http/server.o"
+	@echo "... src/http/server.i"
+	@echo "... src/http/server.s"
+	@echo "... src/http/session.o"
+	@echo "... src/http/session.i"
+	@echo "... src/http/session.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

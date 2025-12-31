@@ -30,12 +30,8 @@ find_package(nlohmann_json REQUIRED)
 # ─────────────────────────────────────────────────────────────
 add_executable(HttpPlusCS2
     src/main.cpp
-    # Add more source files here as you create them, e.g.:
-    # src/http/server.cpp
-    # src/http/session.cpp
-    # src/http/router.cpp
-    # src/gsi/parser.cpp
-    # src/store/inmemory_store.cpp
+    src/http/server.cpp
+    src/http/session.cpp
 )
 
 target_include_directories(HttpPlusCS2 PRIVATE

@@ -1,0 +1,659 @@
+{
+	"abstract" : true,
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include",
+			"find_package",
+			"set_property"
+		],
+		"files" : 
+		[
+			"build/BoostTargets.cmake",
+			"build/BoostConfig.cmake",
+			"CMakeLists.txt",
+			"build/Boost-Target-debug.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 25,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 17,
+				"parent" : 4
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 4
+			},
+			{
+				"file" : 3,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2500,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2501,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2502,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2503,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2504,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2505,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2506,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2507,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2508,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2509,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2510,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2511,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2512,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2513,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2514,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2515,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2516,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2517,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2518,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2519,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2520,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2521,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2522,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2523,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2524,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2525,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2526,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2527,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2528,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2529,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2530,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2531,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2532,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2533,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2534,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2535,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2536,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2537,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2538,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2539,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 2540,
+				"parent" : 7
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"id" : "boost::boost::@6890427a1f51a3e7e1df",
+	"imported" : true,
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 8,
+			"id" : "Boost::log_setup::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "Boost::type_erasure::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "Boost::log::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "Boost::locale::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "Boost::contract::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "Boost::thread::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "Boost::process::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "Boost::nowide::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "Boost::iostreams::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "Boost::wserialization::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "Boost::url::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "Boost::random::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 20,
+			"id" : "Boost::math_tr1l::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "Boost::math_tr1f::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "Boost::math_tr1::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 23,
+			"id" : "Boost::math_c99l::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "Boost::math_c99f::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "Boost::math_c99::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 26,
+			"id" : "Boost::json::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "Boost::filesystem::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "Boost::coroutine::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 29,
+			"id" : "Boost::cobalt::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "Boost::chrono::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "Boost::timer::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 32,
+			"id" : "Boost::system::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 33,
+			"id" : "Boost::serialization::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 34,
+			"id" : "Boost::regex::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 35,
+			"id" : "Boost::program_options::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 36,
+			"id" : "Boost::math::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 37,
+			"id" : "Boost::exception::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 38,
+			"id" : "Boost::date_time::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 39,
+			"id" : "Boost::context::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 40,
+			"id" : "Boost::container::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 41,
+			"id" : "Boost::charconv::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 42,
+			"id" : "Boost::atomic::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 43,
+			"id" : "boost::_libboost::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 44,
+			"id" : "Boost::boost::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 45,
+			"id" : "Boost::headers::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 46,
+			"id" : "Boost::dynamic_linking::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 47,
+			"id" : "Boost::disable_autolinking::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 48,
+			"id" : "Boost::diagnostic_definitions::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 8,
+			"id" : "Boost::log_setup::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 9,
+			"id" : "Boost::type_erasure::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 10,
+			"id" : "Boost::log::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 11,
+			"id" : "Boost::locale::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 12,
+			"id" : "Boost::contract::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 13,
+			"id" : "Boost::thread::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 14,
+			"id" : "Boost::process::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 15,
+			"id" : "Boost::nowide::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 16,
+			"id" : "Boost::iostreams::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 17,
+			"id" : "Boost::wserialization::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 18,
+			"id" : "Boost::url::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 19,
+			"id" : "Boost::random::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 20,
+			"id" : "Boost::math_tr1l::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 21,
+			"id" : "Boost::math_tr1f::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 22,
+			"id" : "Boost::math_tr1::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 23,
+			"id" : "Boost::math_c99l::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 24,
+			"id" : "Boost::math_c99f::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 25,
+			"id" : "Boost::math_c99::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 26,
+			"id" : "Boost::json::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 27,
+			"id" : "Boost::filesystem::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 28,
+			"id" : "Boost::coroutine::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 29,
+			"id" : "Boost::cobalt::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 30,
+			"id" : "Boost::chrono::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 31,
+			"id" : "Boost::timer::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 32,
+			"id" : "Boost::system::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 33,
+			"id" : "Boost::serialization::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 34,
+			"id" : "Boost::regex::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 35,
+			"id" : "Boost::program_options::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 36,
+			"id" : "Boost::math::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 37,
+			"id" : "Boost::exception::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 38,
+			"id" : "Boost::date_time::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 39,
+			"id" : "Boost::context::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 40,
+			"id" : "Boost::container::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 41,
+			"id" : "Boost::charconv::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 42,
+			"id" : "Boost::atomic::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 43,
+			"id" : "boost::_libboost::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 44,
+			"id" : "Boost::boost::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 45,
+			"id" : "Boost::headers::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 46,
+			"id" : "Boost::dynamic_linking::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 47,
+			"id" : "Boost::disable_autolinking::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 48,
+			"id" : "Boost::diagnostic_definitions::@6890427a1f51a3e7e1df"
+		}
+	],
+	"local" : true,
+	"name" : "boost::boost",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}
