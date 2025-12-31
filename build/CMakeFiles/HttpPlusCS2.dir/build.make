@@ -114,11 +114,41 @@ CMakeFiles/HttpPlusCS2.dir/src/http/session.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HttpPlusCS2.dir/src/http/session.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/neilluong/Desktop/Http+cs2/src/http/session.cpp -o CMakeFiles/HttpPlusCS2.dir/src/http/session.cpp.s
 
+CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o: CMakeFiles/HttpPlusCS2.dir/flags.make
+CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o: /Users/neilluong/Desktop/Http+cs2/src/http/router.cpp
+CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o: CMakeFiles/HttpPlusCS2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/neilluong/Desktop/Http+cs2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o -MF CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o.d -o CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o -c /Users/neilluong/Desktop/Http+cs2/src/http/router.cpp
+
+CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/neilluong/Desktop/Http+cs2/src/http/router.cpp > CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.i
+
+CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/neilluong/Desktop/Http+cs2/src/http/router.cpp -o CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.s
+
+CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o: CMakeFiles/HttpPlusCS2.dir/flags.make
+CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o: /Users/neilluong/Desktop/Http+cs2/src/http/response.cpp
+CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o: CMakeFiles/HttpPlusCS2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/neilluong/Desktop/Http+cs2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o -MF CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o.d -o CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o -c /Users/neilluong/Desktop/Http+cs2/src/http/response.cpp
+
+CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/neilluong/Desktop/Http+cs2/src/http/response.cpp > CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.i
+
+CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/neilluong/Desktop/Http+cs2/src/http/response.cpp -o CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.s
+
 # Object files for target HttpPlusCS2
 HttpPlusCS2_OBJECTS = \
 "CMakeFiles/HttpPlusCS2.dir/src/main.cpp.o" \
 "CMakeFiles/HttpPlusCS2.dir/src/http/server.cpp.o" \
-"CMakeFiles/HttpPlusCS2.dir/src/http/session.cpp.o"
+"CMakeFiles/HttpPlusCS2.dir/src/http/session.cpp.o" \
+"CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o" \
+"CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o"
 
 # External object files for target HttpPlusCS2
 HttpPlusCS2_EXTERNAL_OBJECTS =
@@ -126,9 +156,11 @@ HttpPlusCS2_EXTERNAL_OBJECTS =
 HttpPlusCS2: CMakeFiles/HttpPlusCS2.dir/src/main.cpp.o
 HttpPlusCS2: CMakeFiles/HttpPlusCS2.dir/src/http/server.cpp.o
 HttpPlusCS2: CMakeFiles/HttpPlusCS2.dir/src/http/session.cpp.o
+HttpPlusCS2: CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o
+HttpPlusCS2: CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o
 HttpPlusCS2: CMakeFiles/HttpPlusCS2.dir/build.make
 HttpPlusCS2: CMakeFiles/HttpPlusCS2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/neilluong/Desktop/Http+cs2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable HttpPlusCS2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/neilluong/Desktop/Http+cs2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable HttpPlusCS2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HttpPlusCS2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

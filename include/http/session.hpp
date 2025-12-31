@@ -7,6 +7,7 @@
 
 #include <boost/asio.hpp>
 #include <boost/beast.hpp>
+#include "router.hpp"
 
 namespace http_server {
 // ─────────────────────────────────────────────────────────────────────────────
@@ -22,24 +23,21 @@ namespace http_server {
 class Session {
 public:
     // Take ownership of the socket (moved in)
-    explicit Session(boost::asio::ip::tcp::socket socket);
+    explicit Session(tcp::socket socket, const Router& router);
 
     // Run the session synchronously (blocking)
     // In production you'd make this async, but sync is easier to learn first.
     void run();
 
 private:
-    boost::asio::ip::tcp::socket socket_;
-    boost::beast::flat_buffer buffer_;  // Stores incoming data; grows as needed
+    const Router& router_;
+    tcp::socket socket_;
+    beast::flat_buffer buffer_;  // Stores incoming data; grows as needed
 
     // Read one HTTP request from the socket
-    boost::beast::http::request<boost::beast::http::string_body> read_request();
-
-    // Build a response based on the request (this is our "router" for now)
-    boost::beast::http::response<boost::beast::http::string_body> handle_request(
-        const boost::beast::http::request<boost::beast::http::string_body>& req);
+    http::request<http::string_body> read_request();
     // Write the response back to the socket
-    void write_response(boost::beast::http::response<boost::beast::http::string_body>& res);
+    void write_response(http::response<http::string_body>& res);
 };
 
 }  // namespace http_server

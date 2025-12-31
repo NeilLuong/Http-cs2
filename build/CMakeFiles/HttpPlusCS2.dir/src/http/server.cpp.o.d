@@ -1829,7 +1829,8 @@ CMakeFiles/HttpPlusCS2.dir/src/http/server.cpp.o: \
   /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include/boost/asio/writable_pipe.hpp \
   /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include/boost/asio/write_at.hpp \
   /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include/boost/asio/impl/write_at.hpp \
-  /Users/neilluong/Desktop/Http+cs2/include/http/session.hpp \
+  /Users/neilluong/Desktop/Http+cs2/include/http/router.hpp \
+  /Users/neilluong/Desktop/Http+cs2/include/http/types.hpp \
   /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include/boost/beast.hpp \
   /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include/boost/beast/core/detail/config.hpp \
   /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include/boost/core/ignore_unused.hpp \
@@ -2421,4 +2422,6 @@ CMakeFiles/HttpPlusCS2.dir/src/http/server.cpp.o: \
   /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include/boost/beast/websocket/impl/stream.hpp \
   /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include/boost/beast/websocket/impl/write.hpp \
   /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include/boost/beast/zlib.hpp \
+  /Users/neilluong/Desktop/Http+cs2/include/http/response.hpp \
+  /Users/neilluong/Desktop/Http+cs2/include/http/session.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream

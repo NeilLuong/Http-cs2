@@ -32,6 +32,8 @@ add_executable(HttpPlusCS2
     src/main.cpp
     src/http/server.cpp
     src/http/session.cpp
+    src/http/router.cpp
+    src/http/response.cpp
 )
 
 target_include_directories(HttpPlusCS2 PRIVATE

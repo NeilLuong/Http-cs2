@@ -129,6 +129,54 @@ HttpPlusCS2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/build
 .PHONY : HttpPlusCS2/fast
 
+src/http/response.o: src/http/response.cpp.o
+.PHONY : src/http/response.o
+
+# target to build an object file
+src/http/response.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o
+.PHONY : src/http/response.cpp.o
+
+src/http/response.i: src/http/response.cpp.i
+.PHONY : src/http/response.i
+
+# target to preprocess a source file
+src/http/response.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.i
+.PHONY : src/http/response.cpp.i
+
+src/http/response.s: src/http/response.cpp.s
+.PHONY : src/http/response.s
+
+# target to generate assembly for a file
+src/http/response.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.s
+.PHONY : src/http/response.cpp.s
+
+src/http/router.o: src/http/router.cpp.o
+.PHONY : src/http/router.o
+
+# target to build an object file
+src/http/router.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o
+.PHONY : src/http/router.cpp.o
+
+src/http/router.i: src/http/router.cpp.i
+.PHONY : src/http/router.i
+
+# target to preprocess a source file
+src/http/router.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.i
+.PHONY : src/http/router.cpp.i
+
+src/http/router.s: src/http/router.cpp.s
+.PHONY : src/http/router.s
+
+# target to generate assembly for a file
+src/http/router.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.s
+.PHONY : src/http/router.cpp.s
+
 src/http/server.o: src/http/server.cpp.o
 .PHONY : src/http/server.o
 
@@ -210,6 +258,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HttpPlusCS2"
+	@echo "... src/http/response.o"
+	@echo "... src/http/response.i"
+	@echo "... src/http/response.s"
+	@echo "... src/http/router.o"
+	@echo "... src/http/router.i"
+	@echo "... src/http/router.s"
 	@echo "... src/http/server.o"
 	@echo "... src/http/server.i"
 	@echo "... src/http/server.s"

@@ -2420,4 +2420,7 @@ CMakeFiles/HttpPlusCS2.dir/src/http/session.cpp.o: \
   /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include/boost/beast/websocket/impl/stream.hpp \
   /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include/boost/beast/websocket/impl/write.hpp \
   /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include/boost/beast/zlib.hpp \
+  /Users/neilluong/Desktop/Http+cs2/include/http/router.hpp \
+  /Users/neilluong/Desktop/Http+cs2/include/http/types.hpp \
+  /Users/neilluong/Desktop/Http+cs2/include/http/response.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream

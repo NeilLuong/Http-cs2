@@ -4,8 +4,15 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 #include "http/server.hpp"
+#include "http/router.hpp"
+#include "http/response.hpp"
 #include <iostream>
 #include <cstdlib>
+
+http_server::Response health_handler(const http_server::Request& req) {
+    const std::string body = R"({"status":"ok"})";
+    return http_server::make_json_response(req, body, http_server::http::status::ok);
+}
 
 int main(int argc, char* argv[]) {
     try {
@@ -18,7 +25,8 @@ int main(int argc, char* argv[]) {
         std::cout << "═══════════════════════════════════════════════════════\n";
 
         // Create and run the server
-        http_server::Server server(address, port);
+        http_server::Router router;
+        http_server::Server server(address, port, router);
         server.run();
 
     } catch (const std::exception& e) {

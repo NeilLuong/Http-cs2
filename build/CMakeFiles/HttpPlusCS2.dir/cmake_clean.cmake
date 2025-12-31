@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o"
+  "CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o.d"
+  "CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o"
+  "CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o.d"
   "CMakeFiles/HttpPlusCS2.dir/src/http/server.cpp.o"
   "CMakeFiles/HttpPlusCS2.dir/src/http/server.cpp.o.d"
   "CMakeFiles/HttpPlusCS2.dir/src/http/session.cpp.o"

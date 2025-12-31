@@ -16,24 +16,25 @@ namespace http_server {
 // - "0.0.0.0" means "listen on all network interfaces"
 // - "127.0.0.1" means "localhost only"
 // ─────────────────────────────────────────────────────────────────────────────
-Server::Server(const std::string& address, std::uint16_t port)
-    : ioc_(1)  // 1 thread for now (single-threaded server)
+Server::Server(const std::string& address, std::uint16_t port, const Router& router)
+    : router_(router)
+    , ioc_(1)  // 1 thread for now (single-threaded server)
     , acceptor_(ioc_) {
     
     // Parse the address string into an Asio endpoint
-    boost::asio::ip::tcp::endpoint endpoint(boost::asio::ip::make_address(address), port);
+    tcp::endpoint endpoint(net::ip::make_address(address), port);
 
     // Open the acceptor with the endpoint's protocol (IPv4 or IPv6)
     acceptor_.open(endpoint.protocol());
 
     // Allow address reuse (so we can restart quickly without "address in use" errors)
-    acceptor_.set_option(boost::asio::socket_base::reuse_address(true));
+    acceptor_.set_option(net::socket_base::reuse_address(true));
 
     // Bind to the endpoint
     acceptor_.bind(endpoint);
 
     // Start listening (backlog = max pending connections)
-    acceptor_.listen(boost::asio::socket_base::max_listen_connections);
+    acceptor_.listen(net::socket_base::max_listen_connections);
 
     std::cout << "Server listening on " << address << ":" << port << "\n";
 }
@@ -65,7 +66,7 @@ void Server::run() {
 void Server::accept_loop() {
     while (true) {
         // Block until a client connects; returns a connected socket
-        boost::asio::ip::tcp::socket socket(ioc_);
+        tcp::socket socket(ioc_);
         acceptor_.accept(socket);
 
         // Log the connection
@@ -73,7 +74,7 @@ void Server::accept_loop() {
                   << socket.remote_endpoint().address().to_string() << "\n";
 
         // Handle this connection (blocks until request/response complete)
-        Session session(std::move(socket));
+        Session session(std::move(socket), router_);
         session.run();
 
         // Loop back to accept the next connection
