@@ -24,8 +24,11 @@ int main(int argc, char* argv[]) {
         std::cout << "  CS2 GSI Analytics Server\n";
         std::cout << "═══════════════════════════════════════════════════════\n";
 
-        // Create and run the server
+        //Create router and register routes
         http_server::Router router;
+        router.get("/health", health_handler);
+
+        // Create and run the server
         http_server::Server server(address, port, router);
         server.run();
 

@@ -16,11 +16,11 @@ namespace http_server {
 }
 
     void Router::get(const std::string& path, Handler handler) {
-    add(http::verb::get, path, std::move(handler));
+        add(http::verb::get, path, std::move(handler));
 }
 
     void Router::post(const std::string& path, Handler handler) {
-    add(http::verb::post, path, std::move(handler));
+        add(http::verb::post, path, std::move(handler));
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -29,8 +29,11 @@ namespace http_server {
 // ─────────────────────────────────────────────────────────────────────────────
 
 Response Router::route(const Request& req) const {
+    //e.g., /index.html?id=123
     std::string target(req.target());
-    std::string path = target.substr(0, target.find('?')); // Strip query parameters
+
+    // Strip query parameters
+    std::string path = target.substr(0, target.find('?')); 
 
     // Log the incoming request
     std::cout << req.method_string() << " " << path << "\n";
@@ -41,7 +44,7 @@ Response Router::route(const Request& req) const {
     if (it != routes_.end()) {
         // Found a Handler matching
         try {
-            return it->second(req);
+            return it->second(req); // Call the handler
         } catch (const std::exception& e) {
             std::cerr << "Handler error: " << e.what() << "\n";
             return internal_error(req, "Handler threw an exception");
