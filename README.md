@@ -26,6 +26,8 @@ Boost.Beast only implements 1.0 and 1.1.
 
 An HTTP/2 request is a binary-framed stream starting with a fixed preface, not text headers, so an HTTP/1.1 Beast server cannot parse it and will reject or close the connection.
 
+inline allows you to define constants in headers without linker errors (multiple definitions). It also eliminates the "jump" overhead for speed. 
+
 
 
 

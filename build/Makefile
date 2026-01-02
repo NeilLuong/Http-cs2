@@ -129,6 +129,30 @@ HttpPlusCS2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/build
 .PHONY : HttpPlusCS2/fast
 
+src/gsi/ingestion.o: src/gsi/ingestion.cpp.o
+.PHONY : src/gsi/ingestion.o
+
+# target to build an object file
+src/gsi/ingestion.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/gsi/ingestion.cpp.o
+.PHONY : src/gsi/ingestion.cpp.o
+
+src/gsi/ingestion.i: src/gsi/ingestion.cpp.i
+.PHONY : src/gsi/ingestion.i
+
+# target to preprocess a source file
+src/gsi/ingestion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/gsi/ingestion.cpp.i
+.PHONY : src/gsi/ingestion.cpp.i
+
+src/gsi/ingestion.s: src/gsi/ingestion.cpp.s
+.PHONY : src/gsi/ingestion.s
+
+# target to generate assembly for a file
+src/gsi/ingestion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/gsi/ingestion.cpp.s
+.PHONY : src/gsi/ingestion.cpp.s
+
 src/http/response.o: src/http/response.cpp.o
 .PHONY : src/http/response.o
 
@@ -258,6 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HttpPlusCS2"
+	@echo "... src/gsi/ingestion.o"
+	@echo "... src/gsi/ingestion.i"
+	@echo "... src/gsi/ingestion.s"
 	@echo "... src/http/response.o"
 	@echo "... src/http/response.i"
 	@echo "... src/http/response.s"

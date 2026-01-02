@@ -6,6 +6,7 @@
 #include "http/server.hpp"
 #include "http/router.hpp"
 #include "http/response.hpp"
+#include "gsi/ingestion.hpp"
 #include <iostream>
 #include <cstdlib>
 
@@ -13,6 +14,8 @@ http_server::Response health_handler(const http_server::Request& req) {
     const std::string body = R"({"status":"ok"})";
     return http_server::make_json_response(req, body, http_server::http::status::ok);
 }
+
+
 
 int main(int argc, char* argv[]) {
     try {
@@ -27,6 +30,7 @@ int main(int argc, char* argv[]) {
         //Create router and register routes
         http_server::Router router;
         router.get("/health", health_handler);
+        router.post("/v1/gsi", http_server::gsi::handle_gsi_ingest);
 
         // Create and run the server
         http_server::Server server(address, port, router);

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/HttpPlusCS2.dir/src/gsi/ingestion.cpp.o"
+  "CMakeFiles/HttpPlusCS2.dir/src/gsi/ingestion.cpp.o.d"
   "CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o"
   "CMakeFiles/HttpPlusCS2.dir/src/http/response.cpp.o.d"
   "CMakeFiles/HttpPlusCS2.dir/src/http/router.cpp.o"
