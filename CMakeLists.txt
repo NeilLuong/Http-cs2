@@ -35,6 +35,7 @@ add_executable(HttpPlusCS2
     src/http/router.cpp
     src/http/response.cpp
     src/gsi/ingestion.cpp
+    src/gsi/parser.cpp
 )
 
 target_include_directories(HttpPlusCS2 PRIVATE

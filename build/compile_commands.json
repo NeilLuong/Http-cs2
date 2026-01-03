@@ -34,5 +34,11 @@
   "command": "/usr/bin/c++  -I/Users/neilluong/Desktop/Http+cs2/include -isystem /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include -isystem /Users/neilluong/.conan2/p/nlohm0567ffc90cfc1/p/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wall -Wextra -Wpedantic -o CMakeFiles/HttpPlusCS2.dir/src/gsi/ingestion.cpp.o -c /Users/neilluong/Desktop/Http+cs2/src/gsi/ingestion.cpp",
   "file": "/Users/neilluong/Desktop/Http+cs2/src/gsi/ingestion.cpp",
   "output": "CMakeFiles/HttpPlusCS2.dir/src/gsi/ingestion.cpp.o"
+},
+{
+  "directory": "/Users/neilluong/Desktop/Http+cs2/build",
+  "command": "/usr/bin/c++  -I/Users/neilluong/Desktop/Http+cs2/include -isystem /Users/neilluong/.conan2/p/b/boost1f0a135f60a4d/p/include -isystem /Users/neilluong/.conan2/p/nlohm0567ffc90cfc1/p/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -Wall -Wextra -Wpedantic -o CMakeFiles/HttpPlusCS2.dir/src/gsi/parser.cpp.o -c /Users/neilluong/Desktop/Http+cs2/src/gsi/parser.cpp",
+  "file": "/Users/neilluong/Desktop/Http+cs2/src/gsi/parser.cpp",
+  "output": "CMakeFiles/HttpPlusCS2.dir/src/gsi/parser.cpp.o"
 }
 ]

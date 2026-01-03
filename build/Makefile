@@ -153,6 +153,30 @@ src/gsi/ingestion.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/gsi/ingestion.cpp.s
 .PHONY : src/gsi/ingestion.cpp.s
 
+src/gsi/parser.o: src/gsi/parser.cpp.o
+.PHONY : src/gsi/parser.o
+
+# target to build an object file
+src/gsi/parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/gsi/parser.cpp.o
+.PHONY : src/gsi/parser.cpp.o
+
+src/gsi/parser.i: src/gsi/parser.cpp.i
+.PHONY : src/gsi/parser.i
+
+# target to preprocess a source file
+src/gsi/parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/gsi/parser.cpp.i
+.PHONY : src/gsi/parser.cpp.i
+
+src/gsi/parser.s: src/gsi/parser.cpp.s
+.PHONY : src/gsi/parser.s
+
+# target to generate assembly for a file
+src/gsi/parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/gsi/parser.cpp.s
+.PHONY : src/gsi/parser.cpp.s
+
 src/http/response.o: src/http/response.cpp.o
 .PHONY : src/http/response.o
 
@@ -285,6 +309,9 @@ help:
 	@echo "... src/gsi/ingestion.o"
 	@echo "... src/gsi/ingestion.i"
 	@echo "... src/gsi/ingestion.s"
+	@echo "... src/gsi/parser.o"
+	@echo "... src/gsi/parser.i"
+	@echo "... src/gsi/parser.s"
 	@echo "... src/http/response.o"
 	@echo "... src/http/response.i"
 	@echo "... src/http/response.s"
