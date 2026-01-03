@@ -129,6 +129,19 @@ HttpPlusCS2/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/build
 .PHONY : HttpPlusCS2/fast
 
+#=============================================================================
+# Target rules for targets named TestParser
+
+# Build rule for target.
+TestParser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TestParser
+.PHONY : TestParser
+
+# fast build rule for target.
+TestParser/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestParser.dir/build.make CMakeFiles/TestParser.dir/build
+.PHONY : TestParser/fast
+
 src/gsi/ingestion.o: src/gsi/ingestion.cpp.o
 .PHONY : src/gsi/ingestion.o
 
@@ -159,6 +172,7 @@ src/gsi/parser.o: src/gsi/parser.cpp.o
 # target to build an object file
 src/gsi/parser.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/gsi/parser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestParser.dir/build.make CMakeFiles/TestParser.dir/src/gsi/parser.cpp.o
 .PHONY : src/gsi/parser.cpp.o
 
 src/gsi/parser.i: src/gsi/parser.cpp.i
@@ -167,6 +181,7 @@ src/gsi/parser.i: src/gsi/parser.cpp.i
 # target to preprocess a source file
 src/gsi/parser.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/gsi/parser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestParser.dir/build.make CMakeFiles/TestParser.dir/src/gsi/parser.cpp.i
 .PHONY : src/gsi/parser.cpp.i
 
 src/gsi/parser.s: src/gsi/parser.cpp.s
@@ -175,6 +190,7 @@ src/gsi/parser.s: src/gsi/parser.cpp.s
 # target to generate assembly for a file
 src/gsi/parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/gsi/parser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestParser.dir/build.make CMakeFiles/TestParser.dir/src/gsi/parser.cpp.s
 .PHONY : src/gsi/parser.cpp.s
 
 src/http/response.o: src/http/response.cpp.o
@@ -297,6 +313,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/HttpPlusCS2.dir/build.make CMakeFiles/HttpPlusCS2.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+tests/test_parser.o: tests/test_parser.cpp.o
+.PHONY : tests/test_parser.o
+
+# target to build an object file
+tests/test_parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestParser.dir/build.make CMakeFiles/TestParser.dir/tests/test_parser.cpp.o
+.PHONY : tests/test_parser.cpp.o
+
+tests/test_parser.i: tests/test_parser.cpp.i
+.PHONY : tests/test_parser.i
+
+# target to preprocess a source file
+tests/test_parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestParser.dir/build.make CMakeFiles/TestParser.dir/tests/test_parser.cpp.i
+.PHONY : tests/test_parser.cpp.i
+
+tests/test_parser.s: tests/test_parser.cpp.s
+.PHONY : tests/test_parser.s
+
+# target to generate assembly for a file
+tests/test_parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestParser.dir/build.make CMakeFiles/TestParser.dir/tests/test_parser.cpp.s
+.PHONY : tests/test_parser.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -306,6 +346,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... HttpPlusCS2"
+	@echo "... TestParser"
 	@echo "... src/gsi/ingestion.o"
 	@echo "... src/gsi/ingestion.i"
 	@echo "... src/gsi/ingestion.s"
@@ -327,6 +368,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/test_parser.o"
+	@echo "... tests/test_parser.i"
+	@echo "... tests/test_parser.s"
 .PHONY : help
 
 

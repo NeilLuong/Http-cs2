@@ -38,10 +38,16 @@ add_executable(HttpPlusCS2
     src/gsi/parser.cpp
 )
 
+add_executable(TestParser
+    tests/test_parser.cpp
+    src/gsi/parser.cpp
+)
+target_include_directories(TestParser PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_link_libraries(TestParser PRIVATE nlohmann_json::nlohmann_json)
+
 target_include_directories(HttpPlusCS2 PRIVATE
     ${CMAKE_SOURCE_DIR}/include
 )
-
 target_link_libraries(HttpPlusCS2 PRIVATE
     Boost::boost      # Header-only libs (Asio, Beast, etc.)
     Boost::system     # Required by Asio/Beast at link time
@@ -52,6 +58,10 @@ target_link_libraries(HttpPlusCS2 PRIVATE
 # Compiler warnings (recommended for catching bugs early)
 # ─────────────────────────────────────────────────────────────
 target_compile_options(HttpPlusCS2 PRIVATE
+    $<$<CXX_COMPILER_ID:AppleClang,Clang,GNU>:-Wall -Wextra -Wpedantic>
+    $<$<CXX_COMPILER_ID:MSVC>:/W4>
+)
+target_compile_options(TestParser PRIVATE
     $<$<CXX_COMPILER_ID:AppleClang,Clang,GNU>:-Wall -Wextra -Wpedantic>
     $<$<CXX_COMPILER_ID:MSVC>:/W4>
 )

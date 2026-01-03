@@ -1,3 +1,4 @@
 /Users/neilluong/Desktop/Http+cs2/build/CMakeFiles/HttpPlusCS2.dir
+/Users/neilluong/Desktop/Http+cs2/build/CMakeFiles/TestParser.dir
 /Users/neilluong/Desktop/Http+cs2/build/CMakeFiles/edit_cache.dir
 /Users/neilluong/Desktop/Http+cs2/build/CMakeFiles/rebuild_cache.dir
